@@ -50,8 +50,8 @@
 
 1. Primero tenemos que hacer el repositorio local "gitable" para poder subir las modificaciones en la [web](https://github.com) con el comando `git init`. 
 2. Hecho esto con `git status` comprobamos que archivos se han modificado y éstos apareceran en rojo. 
-3. Con el comando 'git add' añadimos los documentos que queremos subir al repositorio web 
+3. Con el comando `git add` añadimos los documentos que queremos subir al repositorio web 
 4. Después con el comnado `git commit -m` "Explicamos porque hacemos el commit"
 5. Por último con el comando `git push origin main` publicamos los archivos en [github](https://github.com)
-
+6. Con `git add` el nombre del documento y un `.`se añaden todos los cambios. 
  
