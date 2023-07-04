@@ -9,8 +9,18 @@ Homebrew es un sistema de gestión de paquetes que simplifica la instalaciòn, a
 
 ### Cómo instalar Homebrew
 Para instalar este gestor tenemos que ir a la pàgina web de [Homebrew](https://brew.sh/index_es)y copiar el código y pegarlo en nuestra terminal ` $/bin/bash -c "$(curl -fsSL https://raw.githubsercontent.com/Homebrew/install/HEAD/install.sh)"`
+Con Homebrew podemos instalar comandos como `wget`y `curl`
+`wget`se usa para recuperar contenido y archivos de servidores web. El nombre es una combinación de Worl Wild Web y la palabra get. Admite descargas a través de FTP, SFTP, HTTP, y HTTPS. El comando wget se instala de la siguiente manera: `brew install wget`
+`curl` es un comando que se usa para comunicarse con protocolos URL y es una herramienta para transferir datos y es compatible con una gran lista de protocolos. El comando `curl`se instala de la siguiente manera `brew install curl` 
 
- 
+## Los comandos
+Los comandos son palabras reservadas que usa el sistema operativo para ejecutar determinadas accions usando la terminal o línea de comandos. Para moverse por la terminal serà necesario conocer algunos comandos como: 
+`pwd` de las siglas en inglés Print Working Directory.Si escribimos `pwd`en la terminal nos va a devolver el directorio en el que nos encontramos trabajando. 
+`cd` de las siglas en inglés Change Directory sirve para movernos por el arbol de directorios en la termianl y es necesario para cambiar de directorio 
+`ls`se utiliza para listar archivos o directorios del directorio donde te encuentras. Con la variante `ls -la` se listaran también los directorios ocultos. 
+`mv`este comando se usa para mover o renombrar archivos o directorios del sistema de archivos.
+
+
 ## Nos descargamos Oh My Bash 
 Oh-My-Bash es un framework de código abierto impulsado por la comunidad para gestionar tu configuración BASH.Lo primero que hace es resaltar la sintaxis de la terminal y facilita la lectura.  Editamos el documento .bashrc con nano para configurarlo a nuestro gusto.
 Elegimos un tema y lo cambiaos en la opción OSH_THEME="rr" 
@@ -22,9 +32,9 @@ Elegimos un tema y lo cambiaos en la opción OSH_THEME="rr"
 2. brew install `sl`: al ejecutar el comando aparece un tren en arte ASCII que atraviesa la terminal.
 ### Comando 'figlet' crea banners de texto ASCII
 1. Si no tenemos `figlet` hay que instalarlo
-2. Instalamos el comando `figlet`
+2. Instalamos el comando `figlet`s
 3. para usarlo escribimos `figlet` y el texto que queremos que aparezca en figlet entre comillas `figlet` "Hola Mundo"
-
+d
 | | | | ___ | | __ _     _ __ ___  _   _ _ __   __| | ___  
 | |_| |/ _ \| |/ _` |   | '_ ` _ \| | | | '_ \ / _` |/ _ \ 
 |  _  | (_) | | (_| |_  | | | | | | |_| | | | | (_| | (_) |
