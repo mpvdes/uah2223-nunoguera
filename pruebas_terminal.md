@@ -2,13 +2,13 @@
 Para poder empezar a trabajar con la shell es importante tener una terminal POSIX operativa. En GNU/Linux viene dado pero en el sistema operativo MacOSX es necesario activar el XCode. 
 *POSIX* es un acronimo de Portable Operating System X UNIX y define una interfaz estándar del sistema operativo y el entorno, incluyendo un intérprete de comandos. 
 ### Cómo activar XCode
-Para acceder a la terminal en Mac hay que acceder a Aplicaciones -> Utilidades -> Terminal y una vez en la línea de comandos escribir xcode-select `--install` y darle a enter para la instalación. 
+Para acceder a la terminal en Mac hay que acceder a Aplicaciones -> Utilidades -> Terminal y una vez en la línea de comandos escribir xcode-select `--install` y darle a enter para la instalación. Una vez hecho esto instalaremos el gestor de paquetes Homebrew.
 
-### Que es Homebrew
+## Que es Homebrew
 Homebrew es un sistema de gestión de paquetes que simplifica la instalaciòn, actualización y eliminación de programas en los sistemas operativos de Mac OS de Apple. Homebrew instala todo aquello que necesitas que Apple no instala de serie. 
 
 ### Cómo instalar Homebrew
-Para instalar este gestor tenemos que ir a la pàgina web de [Homebrew](brew.sh)y copiar el código y pegarlo en nuestra terminal ` $/bin/bash -c "$(curl -fsSL https://raw.githubsercontent.com/Homebrew/install/HEAD/install.sh)"`
+Para instalar este gestor tenemos que ir a la pàgina web de [Homebrew](https://brew.sh/index_es)y copiar el código y pegarlo en nuestra terminal ` $/bin/bash -c "$(curl -fsSL https://raw.githubsercontent.com/Homebrew/install/HEAD/install.sh)"`
 
  
 ## Nos descargamos Oh My Bash 
