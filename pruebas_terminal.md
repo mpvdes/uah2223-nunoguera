@@ -1,25 +1,34 @@
 # Pruebas terminal
+##Cómo hacer que la terminal sea operativa 
 Para poder empezar a trabajar con la shell es importante tener una terminal POSIX operativa. En GNU/Linux viene dado pero en el sistema operativo MacOSX es necesario activar el XCode. 
 *POSIX* es un acronimo de Portable Operating System X UNIX y define una interfaz estándar del sistema operativo y el entorno, incluyendo un intérprete de comandos. 
 ### Cómo activar XCode
 Para acceder a la terminal en Mac hay que acceder a Aplicaciones -> Utilidades -> Terminal y una vez en la línea de comandos escribir xcode-select `--install` y darle a enter para la instalación. Una vez hecho esto instalaremos el gestor de paquetes Homebrew.
 
-## Que es Homebrew
+## Què es Homebrew
 Homebrew es un sistema de gestión de paquetes que simplifica la instalaciòn, actualización y eliminación de programas en los sistemas operativos de Mac OS de Apple. Homebrew instala todo aquello que necesitas que Apple no instala de serie. 
 
 ### Cómo instalar Homebrew
 Para instalar este gestor tenemos que ir a la pàgina web de [Homebrew](https://brew.sh/index_es)y copiar el código y pegarlo en nuestra terminal ` $/bin/bash -c "$(curl -fsSL https://raw.githubsercontent.com/Homebrew/install/HEAD/install.sh)"`
 Con Homebrew podemos instalar comandos como `wget`y `curl`
-`wget`se usa para recuperar contenido y archivos de servidores web. El nombre es una combinación de Worl Wild Web y la palabra get. Admite descargas a través de FTP, SFTP, HTTP, y HTTPS. El comando wget se instala de la siguiente manera: `brew install wget`
+`wget`se usa para recuperar contenido y archivos de servidores web. El nombre es una combinación de Worl Wild Web y la palabra get. Admite descargas a través de FTP, SFTP, HTTP, y HTTPS. El comando wget se instala de la siguiente manera: `brew install wget`  
 `curl` es un comando que se usa para comunicarse con protocolos URL y es una herramienta para transferir datos y es compatible con una gran lista de protocolos. El comando `curl`se instala de la siguiente manera `brew install curl` 
 
 ## Los comandos
-Los comandos son palabras reservadas que usa el sistema operativo para ejecutar determinadas accions usando la terminal o línea de comandos. Para moverse por la terminal serà necesario conocer algunos comandos como: 
-`pwd` de las siglas en inglés Print Working Directory.Si escribimos `pwd`en la terminal nos va a devolver el directorio en el que nos encontramos trabajando. 
-`cd` de las siglas en inglés Change Directory sirve para movernos por el arbol de directorios en la termianl y es necesario para cambiar de directorio 
-`ls`se utiliza para listar archivos o directorios del directorio donde te encuentras. Con la variante `ls -la` se listaran también los directorios ocultos. 
+Los comandos son palabras reservadas que usa el sistema operativo para ejecutar determinadas accions usando la terminal o línea de comandos. Para moverse por la terminal serà necesario conocer algunos comandos como:   
+`pwd` de las siglas en inglés Print Working Directory.Si escribimos `pwd`en la terminal nos va a devolver el directorio en el que nos encontramos trabajando.   
+`cd` de las siglas en inglés Change Directory sirve para movernos por el arbol de directorios en la termianl y es necesario para cambiar de directorio   
+`ls`se utiliza para listar archivos o directorios del directorio donde te encuentras.  
+ Con la variante `ls -la` se listaran también los directorios ocultos.  
 `mv`este comando se usa para mover o renombrar archivos o directorios del sistema de archivos.
 
+Para que el comando ejecute la funcion es importante escribir primero el comando y  luego el argumento. Por ejemplo si quisiera cambiar el nombre de este documento usaría: 
+1. El comando `mv` 
+2. El nombre actual del documento 
+3. El nuevo nombre que quiero dar al documento  
+`mv pruebas_terminal nuevo nombre` después enter  
+Con ciertos comandos no es necesario dar los argumentos por ejemplo el comando si ejecutamos el comando `pwd`la terminal devuelve un mensaje  con el nombre de la carpeta  en este caso seria ** .../mpvd2223/fundamentos_tec/uah2223-nunoguera**
+ 
 
 ## Nos descargamos Oh My Bash 
 Oh-My-Bash es un framework de código abierto impulsado por la comunidad para gestionar tu configuración BASH.Lo primero que hace es resaltar la sintaxis de la terminal y facilita la lectura.  Editamos el documento .bashrc con nano para configurarlo a nuestro gusto.
