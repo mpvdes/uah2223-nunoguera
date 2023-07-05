@@ -20,13 +20,20 @@ Los comandos son palabras reservadas que usa el sistema operativo para ejecutar 
 `cd` de las siglas en inglés Change Directory sirve para movernos por el arbol de directorios en la termianl y es necesario para cambiar de directorio   
 `ls`se utiliza para listar archivos o directorios del directorio donde te encuentras.  
  Con la variante `ls -la` se listaran también los directorios ocultos.  
-`mv`este comando se usa para mover o renombrar archivos o directorios del sistema de archivos.
+`mv`este comando se usa para mover o renombrar archivos o directorios del sistema de archivos.  
+`mkdir`este comando sirve para crear una nuevo directorio (carpeta).  
+Para usarlo hay que escribir el comando + nombre de la carpeta `mkdri nueva carpeta`
+`rm`remove.  Para eliminar  documentos `rm nombre del documento`
+`rm-r`para eliminar los directorios.   
+`rm -rf`para eliminar de forma recursiva y sin pedir confirmación. 
 
+#### Ejemplo de uso del comando `mv`
 Para que el comando ejecute la funcion es importante escribir primero el comando y  luego el argumento. Por ejemplo si quisiera cambiar el nombre de este documento usaría: 
-1. El comando `mv` 
-2. El nombre actual del documento 
-3. El nuevo nombre que quiero dar al documento  
-`mv pruebas_terminal nuevo nombre` después enter  
+1. El comando `mv`. 
+2. El nombre actual del documento. 
+3. El nuevo nombre que quiero dar al documento.   
+`mv pruebas_terminal nuevo nombre` después enter.  
+
 Con ciertos comandos no es necesario dar los argumentos por ejemplo el comando si ejecutamos el comando `pwd`la terminal devuelve un mensaje  con el nombre de la carpeta  en este caso seria ** .../mpvd2223/fundamentos_tec/uah2223-nunoguera**
  
 
@@ -41,10 +48,11 @@ Elegimos un tema y lo cambiaos en la opción OSH_THEME="rr"
 2. brew install `sl`: al ejecutar el comando aparece un tren en arte ASCII que atraviesa la terminal.
 ### Comando 'figlet' crea banners de texto ASCII
 1. Si no tenemos `figlet` hay que instalarlo
-2. Instalamos el comando `figlet`s
+2. Instalamos el comando `brew install figlet`
 3. para usarlo escribimos `figlet` y el texto que queremos que aparezca en figlet entre comillas `figlet` "Hola Mundo"
-d
-| | | | ___ | | __ _     _ __ ___  _   _ _ __   __| | ___  
+
+
+| | | | ___ | | __ _     _ __ ___  _   _ _ __   __| | ___
 | |_| |/ _ \| |/ _` |   | '_ ` _ \| | | | '_ \ / _` |/ _ \ 
 |  _  | (_) | | (_| |_  | | | | | | |_| | | | | (_| | (_) |
 |_| |_|\___/|_|\__,_( ) |_| |_| |_|\__,_|_| |_|\__,_|\___/ 
@@ -63,12 +71,11 @@ d
 
 
 
-Syntax error near unexpected token `('
+
 
 `ls -la ../` para listar los documentos que tenemos en el ordenador
 
-`rm`remove.  Para documentos
-`rm-r`para eliminar los directorios  
+ 
 `rm  -rf`
 `file` preguntas que tipo de archivo es si está vacío sale empty  
 `file *.md` te lista todos los documentos que dentro del directorio tienen formato markdown 
