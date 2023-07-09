@@ -26,21 +26,58 @@ Para usarlo hay que escribir el comando + nombre de la carpeta `mkdri nueva carp
 `rm`remove.  Para eliminar  documentos `rm nombre del documento`
 `rm-r`para eliminar los directorios.   
 `rm -rf`para eliminar de forma recursiva y sin pedir confirmación. 
+`file` preguntas que tipo de archivo es si está vacío sale empty.  
+`file *.md` te lista todos los documentos que dentro del directorio tienen formato markdown.  
+`git push -f`sube todo lo que tienes en el repositorio local.  
+`grep -rn \# pruebas-github.md ` rn para que busque de manera recursiva y n para el número de línea.
 
 #### Ejemplo de uso del comando `mv`
 Para que el comando ejecute la funcion es importante escribir primero el comando y  luego el argumento. Por ejemplo si quisiera cambiar el nombre de este documento usaría: 
 1. El comando `mv`. 
 2. El nombre actual del documento. 
 3. El nuevo nombre que quiero dar al documento.   
-`mv pruebas_terminal nuevo nombre` después enter.  
 
-Con ciertos comandos no es necesario dar los argumentos por ejemplo el comando si ejecutamos el comando `pwd`la terminal devuelve un mensaje  con el nombre de la carpeta  en este caso seria ** .../mpvd2223/fundamentos_tec/uah2223-nunoguera**
+```
+mv pruebas_terminal nuevo nombre` después enter.  
+```
+Con ciertos comandos no es necesario dar los argumentos por ejemplo el comando si ejecutamos el comando `pwd`la terminal devuelve un mensaje  con el nombre de la carpeta  en este caso seria **.../mpvd2223/fundamentos_tec/uah2223-nunoguera**
  
 
 ## Nos descargamos Oh My Bash 
-Oh-My-Bash es un framework de código abierto impulsado por la comunidad para gestionar tu configuración BASH.Lo primero que hace es resaltar la sintaxis de la terminal y facilita la lectura.  Editamos el documento .bashrc con nano para configurarlo a nuestro gusto.
-Elegimos un tema y lo cambiaos en la opción OSH_THEME="rr" 
+Oh-My-Bash es un framework de código abierto impulsado por la comunidad para gestionar tu configuración BASH. Lo primero que hace es resaltar la sintaxis de la terminal y facilita lalectura. 
 
+Para descargar oh-my-bash vamos a la siguiente dirección [Oh-My-Bash](https://ohmybash.nntoan.com/)
+Una vez en git seguimos las intrucciones de descarga, yo elegí descargarlo vía `wget`  
+También debemos elegir en que directorio instalar Oh My Bash, en mi caso la ruta es: 
+```
+users/nombredemiordenador/.oh-my-bash      
+```
+
+Descarga con wget:
+
+```bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+```
+
+Para ejecutar  oh my bash de manera temporal, es decir, mientras estamos en la sesión actual usamos el comando `source`. Este comando sirve para ejecutar comandos de un documento en este caso el .baschrc  
+Ejecutando ```
+source ~/.bashrc
+```
+Activa los comandos de oh my bash y vemos la terminal de un modo mas amigable.  
+
+Editamos el documento .bashrc con nano para configurarlo a nuestro gusto  
+
+Abrimos el documento con nano:  
+ 
+```
+nano .bashrc
+```
+
+Elegimos un tema y lo cambiaos en la opción OSH_THEME=
+
+```
+OSH_THEME="rr"
+```
+ 
 
 ## Herramientas curisoso en la línea de comandos 
 ### Comando 'sl'
@@ -70,22 +107,7 @@ Elegimos un tema y lo cambiaos en la opción OSH_THEME="rr"
                 ||     ||
 
 
-
-
-
-`ls -la ../` para listar los documentos que tenemos en el ordenador
-
- 
-`rm  -rf`
-`file` preguntas que tipo de archivo es si está vacío sale empty  
-`file *.md` te lista todos los documentos que dentro del directorio tienen formato markdown 
-`git push -f`sube todo lo que tienes en el repositorio local. 
-
-`grep -rn \# pruebas-github.md ` rn para que busque de manera recursiva y n para el número de línea
-para guardar un resultado 
-`source`
-
 Emacs 
 Instalo spaceemacs desde spaceemacs
 como ya tenia un directorio con emacs descargado lo muevo de backup `mv` .emacs.d/ emacs.d.bak
-y ahora instalo desde spaceemacs con `git clone` http...
+y ahora instalo desde spaceemacs con `git clone` htt
