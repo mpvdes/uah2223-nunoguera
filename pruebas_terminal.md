@@ -1,5 +1,5 @@
 # Pruebas terminal
-##Cómo hacer que la terminal sea operativa 
+## Cómo hacer que la terminal sea operativa 
 Para poder empezar a trabajar con la shell es importante tener una terminal POSIX operativa. En GNU/Linux viene dado pero en el sistema operativo MacOSX es necesario activar el XCode. 
 *POSIX* es un acronimo de Portable Operating System X UNIX y define una interfaz estándar del sistema operativo y el entorno, incluyendo un intérprete de comandos. 
 ### Cómo activar XCode
@@ -37,9 +37,9 @@ Para que el comando ejecute la funcion es importante escribir primero el comando
 2. El nombre actual del documento. 
 3. El nuevo nombre que quiero dar al documento.   
 
-```
-mv pruebas_terminal nuevo nombre` después enter.  
-```
+
+`mv pruebas_terminal nuevo nombre` después enter.  
+
 Con ciertos comandos no es necesario dar los argumentos por ejemplo el comando si ejecutamos el comando `pwd`la terminal devuelve un mensaje  con el nombre de la carpeta  en este caso seria **.../mpvd2223/fundamentos_tec/uah2223-nunoguera**
  
 
@@ -49,34 +49,29 @@ Oh-My-Bash es un framework de código abierto impulsado por la comunidad para ge
 Para descargar oh-my-bash vamos a la siguiente dirección [Oh-My-Bash](https://ohmybash.nntoan.com/)
 Una vez en git seguimos las intrucciones de descarga, yo elegí descargarlo vía `wget`  
 También debemos elegir en que directorio instalar Oh My Bash, en mi caso la ruta es: 
-```
-users/nombredemiordenador/.oh-my-bash      
-```
+
+`users/nombredemiordenador/.oh-my-bash`   
+
 
 Descarga con wget:
 
-```bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
-```
+`bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"`
 
 Para ejecutar  oh my bash de manera temporal, es decir, mientras estamos en la sesión actual usamos el comando `source`. Este comando sirve para ejecutar comandos de un documento en este caso el .baschrc  
-Ejecutando ```
-source ~/.bashrc
-```
+Ejecutando:
+`source ~/.bashrc`
+
 Activa los comandos de oh my bash y vemos la terminal de un modo mas amigable.  
 
 Editamos el documento .bashrc con nano para configurarlo a nuestro gusto  
 
 Abrimos el documento con nano:  
  
-```
-nano .bashrc
-```
+`nano .bashrc`
 
 Elegimos un tema y lo cambiaos en la opción OSH_THEME=
 
-```
-OSH_THEME="rr"
-```
+`OSH_THEME="rr"`
  
 
 ## Herramientas curisoso en la línea de comandos 
